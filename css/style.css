@@ -433,6 +433,17 @@ template {
   display: none;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 120%;
+}
+body *,
+body *:after,
+body *:before {
+  box-sizing: border-box;
+}
+
 .content {
   position: relative;
   width: 100%;
@@ -461,11 +472,12 @@ template {
   height: 40px;
   color: white;
   background: #DBA813;
-  border: 1px solid white;
+  border: none;
   border-radius: 20px;
   transition: 300ms;
   outline: none;
   z-index: 10;
+  cursor: pointer;
 }
 .play:hover {
   background: #c49611;
@@ -479,6 +491,7 @@ template {
   font-weight: bold;
   border-radius: 50%;
   text-align: center;
+  opacity: 0;
 }
 .text span {
   position: absolute;
@@ -535,10 +548,9 @@ template {
   bottom: 13%;
   right: calc(70% - 350px);
   max-width: 135px;
-  padding: 40px 20px 20px;
+  padding: 45px 20px 15px;
   color: white;
   background: #DBA813;
-  border: 1px solid white;
   border-radius: 20px;
   font-weight: bold;
   text-align: center;
@@ -616,55 +628,4 @@ template {
   height: 15px;
   right: -7px;
   top: 30px;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-}
-body *,
-body *:after,
-body *:before {
-  box-sizing: border-box;
-}
-
-::selection {
-  background: rgba(172, 172, 172, 0.5);
-}
-
-::-moz-selection {
-  background: rgba(172, 172, 172, 0.5);
-}
-
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-a, input[type=submit], button {
-  cursor: pointer;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-}
-
-.clear {
-  clear: both;
-}
-
-[data-expandable] {
-  display: none;
-}
-[data-expandable].view-active {
-  display: block;
 }

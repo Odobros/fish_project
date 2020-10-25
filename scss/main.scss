@@ -2,6 +2,18 @@
 $c-main: #00AEEF;
 $c-yellow: #DBA813;
 
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	line-height: 120%;
+	
+	*,
+	*:after,
+	*:before {
+		box-sizing:border-box;
+	}
+}
+
 .content {
 	position: relative;
 	width: 100%;
@@ -30,11 +42,12 @@ $c-yellow: #DBA813;
 	height: 40px;
 	color: white;
 	background: $c-yellow;
-	border: 1px solid white;
+	border: none;
 	border-radius: 20px;
 	transition: 300ms;
 	outline: none;
 	z-index: 10;
+	cursor: pointer;
 
 	&:hover {
 		background: darken($c-yellow, 5);
@@ -62,12 +75,14 @@ $c-yellow: #DBA813;
 			width: 56px;
 			height: 56px;
 		}
+
 		&:nth-child(2) {
 			bottom: -40px;
 			left: 64px;
 			width: 40px;
 			height: 40px;
 		}
+
 		&:nth-child(3) {
 			bottom: -51px;
 			left: 64px;
@@ -118,10 +133,9 @@ $c-yellow: #DBA813;
 	bottom: 13%;
 	right: calc(70% - 350px);
 	max-width: 135px;
-	padding: 40px 20px 20px;
+	padding: 45px 20px 15px;
 	color: white;
 	background: $c-yellow;
-	border: 1px solid white;
 	border-radius: 20px;
 	font-weight: bold;
 	text-align: center;
@@ -140,60 +154,74 @@ $c-yellow: #DBA813;
 			left: -8px;
 			top: -8px;
 		}
+
 		&:nth-child(2) {
 			left: 12px;
 			top: -15px;
 		}
+
 		&:nth-child(3) {
 			left: 12px;
 			top: 0;
 		}
+
 		&:nth-child(4) {
 			left: 28px;
 			top: -18px;
 		}
+
 		&:nth-child(5) {
 			left: 28px;
 			top: 0;
 		}
+
 		&:nth-child(6) {
 			left: 48px;
 			top: -22px;
 		}
+
 		&:nth-child(7) {
 			left: 48px;
 			top: 6px;
 		}
+
 		&:nth-child(8) {
 			left: 64px;
 			top: -18px;
 		}
+
 		&:nth-child(9) {
 			left: 80px;
 			top: -16px;
 		}
+
 		&:nth-child(10) {
 			left: 71px;
 			top: 0;
 		}
+
 		&:nth-child(11) {
 			left: 96px;
 			top: -14px;
 		}
+
 		&:nth-child(12) {
 			left: 96px;
 			top: -4px;
 		}
+
 		&:nth-child(13) {
 			left: 112px;
 			top: -8px;
 		}
+
 		&:nth-child(14) {
 			width: 20px;
 			height: 20px;
 			right: -10px;
 			top: 15px;
 		}
+
 		&:nth-child(15) {
 			width: 15px;
 			height: 15px;
