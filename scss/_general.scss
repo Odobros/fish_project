@@ -1,0 +1,51 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	
+	*,
+	*:after,
+	*:before {
+		box-sizing:border-box;
+	}
+}
+
+::selection {
+	background:rgba(#acacac, 0.5);
+}
+::-moz-selection {
+	background:rgba(#acacac, 0.5);
+}
+
+a {
+	color:inherit;
+	text-decoration:inherit;
+}
+
+a, input[type="submit"], button {
+	cursor:pointer;
+}
+
+img {
+	max-width:100%;
+	height:auto;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family:inherit;
+}
+
+.clear {
+	clear:both;
+}
+
+[data-expandable] {
+	display:none;
+
+	&.view-active {
+		display:block;
+	}
+}
